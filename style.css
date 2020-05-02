@@ -21,6 +21,7 @@ header {
   background-color: black;
   background-size: cover;
   flex-grow: 1;
+  user-select: none;
 }
 
 body {
