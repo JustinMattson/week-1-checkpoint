@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
 
-@media only screen and (max-width: 600px) {
+/* Max-width: 750px toggles at 500px - why? */
+/* Between 500 and 510px the system is in an undesirable state - expect margin issue?*/
+/* TODO resolve the above statements */
+@media only screen and (max-width: 750px) {
   #mediaToggle {
     display: none !important;
   }
-  #spillCard {
-    margin-top: 100px;
-    background-color: cornflowerblue;
+  #spillCard.spillCard {
+    margin-top: 10px;
   }
 }
 
@@ -30,9 +32,8 @@ main {
   flex-grow: 1;
 }
 
-#spillCard {
+.spillCard {
   margin-top: -100px;
-  background-color: coral;
 }
 
 footer {
@@ -45,4 +46,10 @@ footer {
 
 .text-light {
   text-shadow: 1px 1px 5px black;
+}
+
+.fa-2x:hover {
+  color: yellow;
+  transition-timing-function: ease-in-out;
+  transition: 1s;
 }
