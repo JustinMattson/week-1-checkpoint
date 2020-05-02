@@ -8,7 +8,378 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Week One Challenge</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Week One Checkpoint</title>
   </head>
-  <body></body>
+  <body>
+    <header class="container-fluid">
+      <div id="row-1" class="row">
+        <div id="navbar" class="col-12">
+          <!-- TOdone Sticky Navbar on scroll -->
+          <nav class="navbar navbar-dark bg-primary fixed-top">
+            <a class="navbar-brand text-light" href="#Top">
+              <!-- Navbar content -->
+              <i class="fa fa-flag-checkered" aria-hidden="true"></i>&nbsp;Check
+              Point One - Boise Codeworks</a
+            >
+          </nav>
+        </div>
+        <div class="col-12" style="height: 53px;"></div>
+        <!-- ^ spacer above ^ -->
+
+        <div class="col-12 col-md-6 col-lg-4 p-3">
+          <h3 class="text-light p-3">Let's Go Hiking!</h3>
+          <div class="card py-2 px-2">
+            <form class="form">
+              <div class="form-group">
+                <label class="text-primary" for="exampleFormControlInput1"
+                  >Send me a message:</label
+                >
+                <input
+                  type="name"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="NAME"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="EMAIL"
+                />
+              </div>
+              <div class="form-group d-flex justify-content-between">
+                <input
+                  type="email"
+                  class="form-control w-50"
+                  id="phone"
+                  placeholder="PHONE"
+                />
+                <input
+                  type="ext"
+                  class="form-control w-25"
+                  id="phoneExtension"
+                  placeholder="EXT."
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  placeholder="MESSAGE"
+                ></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <!-- TODO figure out why the font size won't get smaller -->
+                <label class="form-check-label font-italic" for="exampleCheck1">
+                  <h6>
+                    By checking this box I understand that I am responsible for
+                    my own actions and forfeit all right to bring a suit against
+                    Justin Mattson for any reason!
+                  </h6>
+                </label>
+              </div>
+              <button type="submit" class="btn btn-light text-primary">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- The Text-Over-Image is hidden on mobile (@mdeia Rule) -->
+        <!-- Doesn't want to disappear if I put the d-flex stuff in the .col div -->
+        <!-- Doesn't want to justify-content-center if the d-flex stuff is not in the .col div; SPECIFICITY! -->
+        <div
+          id="mediaToggle"
+          class="col-md-6 col-lg-8 py-4 text-light d-flex justify-content-center align-items-center"
+        >
+          <div class="">
+            <div class="p-2 bd-highlight text-center">
+              <h1>Idaho Adventures!</h1>
+            </div>
+            <div class="p-2 bd-highlight text-center">
+              <h5>...and beyond!</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <!-- TOdone Appropriate use of Margins and padding -->
+
+      <div id="row-2" class="row bg-primary">
+        <!-- TOdone Specified elements order changes based on screen size -->
+        <div class="col-12 col-md-6 order-2 order-md-1 py-3 text-light">
+          Many of my hikes are suggestions from my wife's patients. I also check
+          AllTrails frequently for my next favorite trail.
+        </div>
+        <!-- TODO The Card spills out of the row on medium and larger screens -->
+        <!-- TOdone Must use external Icon library (FontAwesome, Material Icons, etc.) -->
+        <div class="col-12 col-md-6 order-1 order-md-2">
+          <div id="spillCard" class="card mb-3 p-2 text-dark shadow">
+            <h4>2020 Progress Card:</h4>
+            <div class="card-body">
+              Miles Traveled:
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 86.47%;"
+                  aria-valuenow="86.47"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  28.8 miles
+                </div>
+              </div>
+              <br />
+              Elevation Gained:
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 81.82%;"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  9,000 ft
+                </div>
+              </div>
+              <br />
+              Boise Grand Slam Peaks Bagged:
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 75%;"
+                  aria-valuenow="3"
+                  aria-valuemin="0"
+                  aria-valuemax="4"
+                >
+                  3 of 4
+                </div>
+              </div>
+              <br />
+              Hotsprings Visited:
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 5%;"
+                  aria-valuenow="5"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  2
+                </div>
+              </div>
+              <br />
+              Fish Caught:
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 0%;"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <i class="fa fa-frown-o text-dark" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="row-3" class="row">
+        <div class="col-12 order-1 col-md-4 order-md-1 py-3">
+          <img
+            src="img/GraceRidge.jpg"
+            alt="Grace Ridge Alaska"
+            style="width: 100%;"
+          />
+        </div>
+        <div
+          class="col-12 order-2 col-md-8 order-md-2 py-3 d-flex align-items-center"
+        >
+          Certifications
+        </div>
+      </div>
+
+      <!-- Excursions -->
+      <div id="row-4" class="row">
+        <!-- TOdone Cards are vertically centered with the center card larger for emphasis -->
+        <!-- Added padding to the card header to make them physically taller even if exactly the same content -->
+        <div class="col-12 pt-5 text-center">
+          <h4>Excursions</h4>
+        </div>
+        <div class="col-12 py-3 text-center">
+          <p>Choose a outing that best fits your ability.</p>
+        </div>
+        <div
+          class="col-12 order-2 col-md-4 order-1 py-4 d-flex justify-content-center align-items-center"
+        >
+          <div class="card rounded-0 shadow border-0">
+            <div class="card-header bg-primary text-center py-2">
+              Full Day + Scenic Drive<br />
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star-half fa-2x" aria-hidden="true"></i>
+            </div>
+            <ul class="list-group list-group-flush text-dark text-center">
+              <li class="list-group-item"><b>~ 15 </b>Miles</li>
+              <li class="list-group-item"><b>3k </b>Vertical</li>
+              <li class="list-group-item"><b>~ 6 </b>Hours</li>
+              <li class="d-flex justify-content-center p-3 bg-light">
+                <button
+                  type="submit"
+                  class="btn btn-dark rounded-0"
+                  style="width: 75%;"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-12 order-1 col-md-4 order-md-2 py-1 mb-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card rounded-0 shadow border-0">
+            <div class="card-header bg-success text-center py-3">
+              Backcountry Weekend<br />
+              + Scenic Drive<br />
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+            </div>
+            <ul class="list-group list-group-flush text-dark text-center">
+              <li class="list-group-item"><b>20+ </b>Miles</li>
+              <li class="list-group-item"><b>5k </b>Vertical</li>
+              <li class="list-group-item"><b> 3 </b>Days</li>
+              <li class="list-group-item"><b> + </b>Fishing/Hotsprings</li>
+              <li class="d-flex justify-content-center p-3 bg-light">
+                <button
+                  type="submit"
+                  class="btn btn-dark rounded-0"
+                  style="width: 75%;"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-12 order-3 col-md-4 order-md-3 py-1 mb-3 d-flex justify-content-center align-items-center"
+        >
+          <div class="card rounded-0 shadow border-0">
+            <div class="card-header bg-secondary text-center py-1">
+              Morning/Evening Quickie<br />
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+              <i class="fa fa-star-half fa-2x" aria-hidden="true"></i>
+            </div>
+            <ul class="list-group list-group-flush text-dark text-center">
+              <li class="list-group-item"><b> ~ 5 </b>Miles</li>
+              <li class="list-group-item"><b> 2k </b>Vertical</li>
+              <li class="list-group-item"><b> ~ 3 </b>Hours</li>
+              <li class="d-flex justify-content-center p-3 bg-light">
+                <button
+                  type="submit"
+                  class="btn btn-dark rounded-0"
+                  style="width: 75%;"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div id="row-5" class="row bg-primary text-light shadow">
+        <div class="col-12">
+          closing column of last row
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid">
+      <div id="favorites" class="row pb-3 pt-3 d-flex justify-content-center">
+        <div class="col-12 col-md-4 text-center pt-3">
+          <a href="https://www.alltrails.com/" target="_blank"
+            ><img
+              src="img/AllTrails.svg"
+              alt="AllTrails"
+              style="max-height: 50px;"
+          /></a>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <a
+            href="https://www.google.com/maps/@44.1640354,-115.0655672,14.5z/data=!5m1!1e4"
+            target="_blank"
+            ><img
+              src="img/google.jfif"
+              alt="Google Maps"
+              style="max-height: 50px;"
+          /></a>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <a href="https://www.garmin.com/en-US/fenix-6/" target="_blank"
+            ><img src="img/garmin.jfif" alt="Garmin" style="max-height: 50px;"
+          /></a>
+        </div>
+      </div>
+      <div id="footer" class="row bg-light text-primary py-3">
+        <div class="col-12 text-center">Contact me to go HIKING!</div>
+        <div class="col-12 text-center">
+          <div id="icons" class="text-primary">
+            <a href="https://www.facebook.com/justin.mattson.9" target="_blank"
+              ><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.instagram.com/toyvo252/" target="_blank">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/justin-mattson-7973a4149/"
+              target="_blank"
+            >
+              <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <a href="mailto:justin.mattson@outlook.com"
+            >justin.mattson@outlook.com</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- S T R E T C H  G O A L S -->
+    <!-- TODO Add some CSS Animations to the page -->
+    <!-- TODO Utilize scroll to in page navigation -->
+    <!-- TODO Swap one of your images for a <video> -->
+  </body>
 </html>
