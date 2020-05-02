@@ -12,14 +12,15 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-image: url("img/thistle.jpg");
   background-color: black;
   background-size: cover;
   flex-grow: 1;
-}
-.navbar {
-  position: sticky, absolute;
 }
 
 body {
@@ -28,6 +29,11 @@ body {
   min-height: 100vh;
   font-family: "Black Han Sans", sans-serif;
 }
+
+.navbar {
+  position: sticky, absolute;
+}
+
 main {
   flex-grow: 1;
 }
@@ -40,10 +46,6 @@ footer {
   font-size: small;
 }
 
-/* div {
-  border: 1px solid black;
-} */
-
 .text-light {
   text-shadow: 1px 1px 5px black;
 }
@@ -52,4 +54,8 @@ footer {
   color: yellow;
   transition-timing-function: ease-in-out;
   transition: 1s;
+}
+
+.mySlides {
+  max-height: 500px;
 }

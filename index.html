@@ -25,8 +25,11 @@
             <a class="navbar-brand text-light" href="#Top">
               <!-- Navbar content -->
               <i class="fa fa-flag-checkered" aria-hidden="true"></i>&nbsp;Check
-              Point One - Boise Codeworks</a
-            >
+              Point One - Boise Codeworks</a>
+              <a href="#slideshow"
+            ><button class="btn btn-primary text-light">
+              Jump to Slideshow
+            </button></a>
           </nav>
         </div>
         <div class="col-12" style="height: 53px;"></div>
@@ -329,9 +332,34 @@
       </div>
 
       <!-- Summary -->
+      <a id="slideshow"></a>
       <div id="row-5" class="row bg-primary text-light shadow">
-        <div class="col-12">
-          closing column of last row
+        <div class="col-12 p-3 height-50em" href="slideshow">
+          <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self -->
+          <h2 class="w3-center">Manual Slideshow</h2>
+          <button
+            class="w3-button w3-black w3-display-left"
+            onclick="plusDivs(-1)"
+          >
+            &#10094;
+          </button>
+          <button
+            class="w3-button w3-black w3-display-right"
+            onclick="plusDivs(1)"
+          >
+            &#10095;
+          </button>
+
+          <div
+            class="w3-content w3-display-container d-flex justify-content-center"
+          >
+            <img class="mySlides" src="img/goatLake.jpg" />
+            <img class="mySlides" src="img/GraceRidge.jpg" />
+            <img class="mySlides" src="img/lookout.jpg" />
+            <img class="mySlides" src="img/rapidCanyon.jpg" />
+            <img class="mySlides" src="img/sunflowers.jpg" />
+            <img class="mySlides" src="img/thistle.jpg" />
+          </div>
         </div>
       </div>
     </main>
@@ -383,14 +411,22 @@
         <div class="col-12 text-center">
           <a href="mailto:justin.mattson@outlook.com"
             >justin.mattson@outlook.com</a
+          ></br>
+          <a href="#Top"
+            ><button class="btn btn-light text-light scroll-to-top">
+              Return to Top
+            </button></a
           >
         </div>
       </div>
     </footer>
     <!-- S T R E T C H  G O A L S -->
-    <!-- TODO Add some CSS Animations to the page -->
+    <!-- TOdone Add some CSS Animations to the page -->
     <!-- make the stars transition yellow on hover -->
+    <!-- borrowed some javascript from w3schools for a manual slideshow -->
     <!-- TODO Utilize scroll to in page navigation -->
+    <!-- added quick buttons to top/bottom -->
     <!-- TODO Swap one of your images for a <video> -->
+    <script src="script.js"></script>
   </body>
 </html>
