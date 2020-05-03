@@ -7,19 +7,22 @@
   /* This .navbar-fixed-top did not seem to do the trick, 
   or maybe it is my inspector view? 
   nope, my phone doesn't do it either*/
-  .navbar-fixed-top {
+  /* .navbar-fixed-top {
     position: relative;
     top: auto;
-  }
+  } */
   #mediaToggle {
     display: none !important;
   }
   #spillCard.spillCard {
     margin-top: 10px;
   }
-  body {
-    margin: 0;
+  .asga {
+    height: 350px;
   }
+  /* body {
+    margin: 0;
+  } */
 }
 
 html {
@@ -52,7 +55,9 @@ main {
 .spillCard {
   margin-top: -100px;
 }
-
+.asga {
+  min-height: 50em;
+}
 footer {
   font-size: small;
 }
@@ -61,7 +66,7 @@ footer {
   text-shadow: 1px 1px 5px black;
 }
 
-.fa-2x:hover {
+.fa-3x:hover {
   color: yellow;
   transition-timing-function: ease-in-out;
   transition: 1s;
@@ -69,4 +74,9 @@ footer {
 
 .mySlides {
   max-height: 500px;
+  max-width: 100%;
+}
+.embed {
+  autoplay: 0;
+  autostart: "0";
 }
