@@ -4,7 +4,9 @@
 /* Between 500 and 510px the system is in an undesirable state - expect margin issue?*/
 /* TODO resolve the above statements */
 @media only screen and (max-width: 750px) {
-  /* This did not seem to do the trick, or maybe it is my inspector view? */
+  /* This .navbar-fixed-top did not seem to do the trick, 
+  or maybe it is my inspector view? 
+  nope, my phone doesn't do it either*/
   .navbar-fixed-top {
     position: relative;
     top: auto;
@@ -39,9 +41,9 @@ body {
   font-family: "Black Han Sans", sans-serif;
 }
 
-.navbar {
+/* .navbar {
   position: sticky, absolute;
-}
+} */
 
 main {
   flex-grow: 1;

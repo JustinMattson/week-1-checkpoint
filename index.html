@@ -19,20 +19,26 @@
   <body>
     <header class="container-fluid">
       <div id="row-1" class="row">
-        <div id="navbar" class="col-12">
-          <!-- TOdone Sticky Navbar on scroll -->
-          <nav class="navbar navbar-dark bg-primary fixed-top">
-            <a class="navbar-brand text-light" href="#Top">
-              <!-- Navbar content -->
-              <i class="fa fa-flag-checkered" aria-hidden="true"></i>&nbsp;Check
-              Point One - Boise Codeworks</a>
-              <a href="#slideshow"
-            ><button class="btn btn-primary text-light">
+      
+        <!-- Navbar -->
+        <div id="navbar" class="col-12 d-flex justify-content-between text-wrap">
+          <nav class="navbar navbar-dark bg-primary fixed-top text-wrap">
+            <a href="#Top" class="navbar-brand text-light">
+              <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+              &nbsp;Check
+              Point One&nbsp;
+              <i class="fa fa-flag-checkered" aria-hidden="true"></i><br>
+              Boise Codeworks</a>
+              <a href="#slideshow">
+              <button class="btn btn-primary text-light">
               Jump to Slideshow
-            </button></a>
+              </button>
+            </a>
           </nav>
         </div>
-        <div class="col-12" style="height: 90px;"></div>
+      
+
+        <div id="#Top" class="col-12" style="height: 90px;"></div>
         <!-- ^ spacer above ^ -->
         <!-- Welome Row within Header -->
         <div class="col-12 order-2 col-md-6 order-md-1 col-lg-4 order-lg-1 p-3">
@@ -126,6 +132,7 @@
       <div id="row-2" class="row bg-primary">
         <!-- TOdone Specified elements order changes based on screen size -->
         <div class="col-12 col-md-6 order-2 order-md-1 py-3 text-light">
+          <a id="Destinations"></a>
           <h1>Destinations:</h1>
           <br />
           <h3>
@@ -218,23 +225,31 @@
       </div>
 
       <!-- Image and DESTINATION NEXT -->
-      <div id="row-3" class="row">
+      <div class="row">
+        <div class="col-12 py-4">
+          <h1>My Destination Next!</h1>
+        </div>
+      </div>
+      <div id="row-3" class="row" style="height:1000px">
+        <a id="Next-Up"></a>
         <div class="col-12 order-1 col-md-4 order-md-1 py-3">
           <img
             src="img/GraceRidge.jpg"
             alt="Grace Ridge Alaska"
-            style="width: 100%;"
+            style="max-width:100%"
           />
         </div>
         <div
-          class="col-12 order-2 col-md-8 order-md-2 py-3 d-flex align-items-center"
-        >
-          Certifications
+          class="col-12 order-2 col-md-8 order-md-2 d-flex justify-content-center">
+          
+          <iframe class="d-flex flex-grow-1 flex-fill" src="//alaskanscottish.org" frameborder="0" style="width:100% height:100%"></iframe>
+          
         </div>
       </div>
 
       <!-- Excursions -->
       <div id="row-4" class="row">
+        <a id="Excursions"></a>
         <!-- TOdone Cards are vertically centered with the center card larger for emphasis -->
         <!-- Added padding to the card header to make them physically taller even if exactly the same content -->
         <div class="col-12 pt-5 text-center">
