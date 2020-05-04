@@ -389,9 +389,11 @@
         </div>
       </div>
             <!-- TODO prevent video from autoplay/autostart -->
+            <!-- simplying having the autoplay tag equates to true...autoplay tag removed! -->
+            <!-- also muted the video -->
             <div class="col-12 embed embed-responsive embed-responsive-16by9 py-0 mt-3">
-              <video width="320" height="240" controls autoplay="0" autostart="0">
-                <source src="videos/VID_20190916_130650.mp4" type="video/mp4"> Your browser does not support the video tag.
+              <video width="320" height="240" controls muted>
+                <source class="video" src="videos/VID_20190916_130650.mp4" type="video/mp4"> Your browser does not support the video tag.
                 </video>
             </div>
     </main>
