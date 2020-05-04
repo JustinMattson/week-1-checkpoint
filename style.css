@@ -4,13 +4,6 @@
 /* Between 500 and 510px the system is in an undesirable state - expect margin issue?*/
 /* TODO resolve the above statements */
 @media only screen and (max-width: 750px) {
-  /* This .navbar-fixed-top did not seem to do the trick, 
-  or maybe it is my inspector view? 
-  nope, my phone doesn't do it either*/
-  /* .navbar-fixed-top {
-    position: relative;
-    top: auto;
-  } */
   #mediaToggle {
     display: none !important;
   }
@@ -20,9 +13,6 @@
   .ashg {
     height: 350px;
   }
-  /* body {
-    margin: 0;
-  } */
 }
 
 html {
@@ -43,10 +33,6 @@ body {
   min-height: 100vh;
   font-family: "Black Han Sans", sans-serif;
 }
-
-/* .navbar {
-  position: sticky, absolute;
-} */
 
 main {
   flex-grow: 1;
@@ -75,8 +61,4 @@ footer {
 .mySlides {
   max-height: 500px;
   max-width: 100%;
-}
-.embed {
-  autoplay: 0;
-  autostart: "0";
 }
